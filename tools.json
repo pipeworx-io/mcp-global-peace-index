@@ -1,0 +1,39 @@
+[
+  {
+    "name": "gpi_country_score",
+    "description": "Global Peace Index score and rank for ONE country — a country peacefulness measure (societal safety, ongoing conflict, and militarisation indicators rolled into one score; LOWER = more peaceful). Published annually by the Institute for Economics & Peace. PREFER for \"how peaceful is <country>\", \"<country> global peace index\", \"peace ranking for <country>\", or as background context on a country before/alongside news-event data (complements gdelt). Pass a country name (e.g. \"Iceland\", \"Russia\", \"United States\" — common aliases like \"USA\"/\"DRC\" are accepted).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string",
+          "description": "Country name (e.g. \"Ukraine\", \"Japan\", \"USA\")."
+        }
+      },
+      "required": [
+        "country"
+      ]
+    }
+  },
+  {
+    "name": "gpi_ranking",
+    "description": "Rank countries by Global Peace Index score — the N most peaceful or N least peaceful countries in one call, with rank and score. PREFER for \"most peaceful countries\", \"least peaceful/most dangerous countries\", \"top 10 most peaceful nations\", \"which countries have the worst peace ranking\". direction defaults to \"most_peaceful\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "number",
+          "description": "How many countries to return (default 10, max 50)."
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "most_peaceful",
+            "least_peaceful"
+          ],
+          "description": "Which end of the ranking to return. Default \"most_peaceful\"."
+        }
+      }
+    }
+  }
+]
