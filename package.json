@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-global-peace-index",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Global Peace Index — annual country peacefulness score and rank, for country-risk context alongside event/news data (fleet #3276).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "global-peace-index",
     "gatewaySlug": "global-peace-index",
-    "sourceHash": "v1-a25e8cb0aed72c1bf1dc39bb0a91f6ef1f3f055417b0cd2c375c3102307486d4",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-1a571e4221266f81160a9baa7bd60219ce23bf55b90ce90eedf88fd873aaab67",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }
